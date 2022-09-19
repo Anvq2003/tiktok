@@ -1,0 +1,73 @@
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  min-width: 100px;
+  padding: 9px 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+
+  + .wrapper {
+    margin-left: 8px;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+// BTN Type
+.rounded {
+  color: rgba(22, 24, 35, 0.75);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+  border-radius: 52px;
+  background-color: rgba(255, 255, 255, 1);
+
+  &:hover {
+    border-color: rgba(22, 24, 35, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  &:hover {
+    border-color: var(--primary);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+  }
+}
+.outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+
+  &:hover {
+    background-color: rgba(254, 44, 85, 0.06);
+    border: 1px solid var(--primary);
+  }
+}
+.text {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// BTN Size
+.small {
+  min-width: 88px;
+  padding: 4px 16px;
+}
+.large {
+  min-width: 136px;
+  padding: 14px 16px;
+}
+.icon + .title,
+.title + .icon {
+  margin-left: 8px;
+}

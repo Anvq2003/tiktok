@@ -7,6 +7,7 @@
   min-width: 100px;
   padding: 9px 16px;
   border-radius: 4px;
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
@@ -70,4 +71,9 @@
 .icon + .title,
 .title + .icon {
   margin-left: 8px;
+}
+.icon {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
 }

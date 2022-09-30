@@ -5,10 +5,11 @@
   --primary: rgba(254, 44, 85, 1);
   --black: #000;
   --white: #fff;
-  --text-color: #333;
+  --text-color: #161823;
   // Default layout
   --default-layout-header-height: 60px;
   --default-layout-width: 1150px;
+  --default-layout-horizontal-spacer: 24px;
 }
 
 * {
@@ -34,4 +35,17 @@ input,
 }
 a[href] {
   color: var(--text-color);
+}
+// Custom tippy box
+body {
+  // .tippy-box {
+  //   font-size: 0.16rem;
+  //   line-height: 2.2rem;
+  //   font-weight: 600;
+  //   border-radius: 8px;
+  //   background-color: rgba(84, 84, 84, 0.92);
+  // }
+  // .tippy-arrow {
+  //   color: rgba(84, 84, 84, 0.92);
+  // }
 }

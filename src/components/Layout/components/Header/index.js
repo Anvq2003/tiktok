@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEllipsisVertical,
@@ -13,6 +14,7 @@ import {
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
+import routesConfig from '~/config/routes';
 import Image from '~/components/image';
 import Button from '~/components/Button';
 import { Wrapper as PopperWrapper, Menu } from '~/components/Popper';
@@ -94,7 +96,9 @@ function Header() {
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
         <div className={cx('logo')}>
-          <img src={images.logo} alt="Tiktok" />
+          <Link to={routesConfig.home} className={cx('logo-link')}>
+            <img src={images.logo} alt="Tiktok" />
+          </Link>
         </div>
 
         <Search />
